@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Analyzer</h1>
+        <p>Welcome! Choose an option below to upload resumes for analysis.</p>
+
+        <div class="options">
+            <button onclick="window.location.href='/upload_single'">Analyze Single Resume</button>
+            <button onclick="window.location.href='/upload_multiple'">Analyze Multiple Resumes</button>
+        </div>
+
+        <div class="job-details-form">
+            <h3>Enter Job Requirements</h3>
+            <form id="job-form" action="/submit_job_requirements" method="POST">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job_title" required>
+                
+                <label for="skills">Required Skills:</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea>
+
+                <button type="submit">Submit Job Requirements</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
