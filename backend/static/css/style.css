@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options button {
+    padding: 12px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.options button:hover {
+    background-color: #45a049;
+}
+
+.job-details-form {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.job-details-form label {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.job-details-form input,
+.job-details-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.job-details-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.job-details-form button:hover {
+    background-color: #0056b3;
+}
