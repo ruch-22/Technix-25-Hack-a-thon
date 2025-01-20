@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyze Multiple Resumes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>RESUME ANALYSER</h1>
+      <p>Upload a zip file of resumes to analyze them at once.</p>
+    </header>
+
+    <section class="upload-section">
+      <form id="resume-form" action="/upload_multiple_resumes" method="POST" enctype="multipart/form-data">
+        <label for="resume-zip">Choose a zip file:</label>
+        <input type="file" id="resume-zip" name="resume_zip" accept=".zip" required aria-label="Choose a zip file for uploading">
+        <br><br>
+        
+        <!-- Job Requirements Input -->
+        <label for="job-requirements">Enter Job Requirements:</label>
+        <textarea id="job-requirements" name="job_requirements" rows="4" placeholder="Enter the job description or required skills..." required aria-label="Enter job requirements"></textarea>
+        <br><br>
+
+        <button type="submit">Upload Zip File and Analyze</button>
+      </form>
+
+      <!-- Feedback Message -->
+      <div id="upload-feedback" style="display: none; margin-top: 10px;"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Resume Analyzer. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  <script>
+    document.getElementById('resume-form').addEventListener('submit', function(event) {
+      const feedback = document.getElementById('upload-feedback');
+      feedback.style.display = 'block';
+      feedback.innerHTML = 'Uploading... Please wait.';
+
+      // Optionally, you can add form submission logic or async handling here
+      event.preventDefault();  // Prevent form submission for demo purposes
+    });
+  </script>
+</body>
+</html>
