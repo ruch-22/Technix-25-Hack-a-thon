@@ -1,23 +1,18 @@
-from flask import Flask, render_template, request, jsonify
-import os
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# Upload folder for resumes
-app.config['UPLOAD_FOLDER'] = './backend/uploads'
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB max file size
-
 @app.route('/')
-def index():
-    return render_template('index.html')
+def home():
+    return render_template('index.html')  # Home page
 
-@app.route('/submit_job_requirements', methods=['POST'])
-def submit_job_requirements():
-    data = request.get_json()
-    job_title = data.get('job_title')
-    skills = data.get('skills')
-    # Process job requirements (save, compare, etc.)
-    return jsonify({"message": "Job requirements received", "job_title": job_title, "skills": skills})
+@app.route('/single_resume')
+def single_resume():
+    return render_template('single_resume.html')  # Page for analyzing a single resume
+
+@app.route('/multiple_resumes')
+def multiple_resumes():
+    return render_template('multiple_resumes.html')  # Page for analyzing multiple resumes
 
 if __name__ == '__main__':
     app.run(debug=True)

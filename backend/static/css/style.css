@@ -1,70 +1,69 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    text-align: center;
     margin: 0;
     padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
+  }
+  
+  .container {
+    padding: 50px;
+    background-color: white;
+    margin: 100px auto;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
     color: #333;
-}
-
-.options {
-    margin-top: 20px;
-}
-
-.options button {
-    padding: 12px 20px;
-    font-size: 18px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-}
-
-.options button:hover {
-    background-color: #45a049;
-}
-
-.job-details-form {
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .upload-section {
     margin-top: 30px;
-    text-align: left;
-}
-
-.job-details-form label {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.job-details-form input,
-.job-details-form textarea {
-    width: 100%;
+  }
+  
+  .upload-section label {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .upload-section input[type="file"] {
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    margin: 10px 0;
     border: 1px solid #ccc;
-}
-
-.job-details-form button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #007BFF;
+    border-radius: 5px;
+  }
+  
+  button {
+    font-size: 1.1em;
+    padding: 15px 30px;
+    margin: 20px;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.job-details-form button:hover {
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
     background-color: #0056b3;
-}
+  }
+  
+  button:active {
+    background-color: #003f7f;
+    transform: scale(0.98);
+  }
+  
+  footer p {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 50px;
+  }
