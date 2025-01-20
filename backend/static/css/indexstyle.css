@@ -1,0 +1,164 @@
+[16:52, 20/01/2025] Ruchika Bambal NGP: /* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://img.freepik.com/free-photo/view-arrangement-with-keyboard-notebooks_23-2148847749.jpg?t=st=1737372027~exp=1737375627~hmac=50d3959088cf8614fca140f2ee0b02f1027fe5b16c1b04aa3cf2f597a929a7c8&w=1060') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    font-weight: 400;
+}
+
+/* Button styles */
+.button-group {
+    margin-top: 30px;
+}
+
+.button-group a {
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.1em;
+    padding: 15px 30px;
+    margin: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+    transform: scale(0.98);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(248, 249, 250, 0.9);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #777;
+}
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://img.freepik.com/free-photo/view-arrangement-with-keyboard-notebooks_23-2148847749.jpg?t=st=1737372027~exp=1737375627~hmac=50d3959088cf8614fca140f2ee0b02f1027fe5b16c1b04aa3cf2f597a929a7c8&w=1060') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 4em; /* Extra large font size */
+    color: #333;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    font-weight: 400;
+}
+
+/* Button styles */
+.button-group {
+    margin-top: 30px;
+}
+
+.button-group a {
+    text-decoration: none;
+}
+
+button {
+    font-size: 1.5em; /* Extra large font size for button text */
+    padding: 20px 40px; /* Increased padding */
+    margin: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    width: 250px; /* Increased button width */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #003f7f;
+    transform: scale(0.98);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(248, 249, 250, 0.9);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #777;
+}

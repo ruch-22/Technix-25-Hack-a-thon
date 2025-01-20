@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Analyzer</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/indexstyle.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        Resume Analyzer
-    </header>
+    
 
     <div class="container">
-        <h1>Welcome to the Resume Analyzer!</h1>
+        <h1>Resume Analyzer</h1>
         <p>Choose an option to begin analyzing resumes.</p>
         
         <div class="button-group">
-            <a href="/single_resume"><button>Single Resume Analysis</button></a>
-            <a href="/multiple_resumes"><button>Multiple Resumes Analysis</button></a>
+            <a href="/single_resume"><button>PERSONAL USE</button></a>
+            <a href="/multiple_resumes"><button>COMPANY USE</button></a>
         </div>
     </div>
 
